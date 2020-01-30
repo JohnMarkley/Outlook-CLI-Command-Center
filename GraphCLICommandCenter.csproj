@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>a7df8c18-98da-4624-b22d-60447ae5e080</UserSecretsId>
+    <PackageId>GraphCLICommandCenter</PackageId>
+    <Authors>John Markley</Authors>
+    <Company />
+    <Product />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Graph" Version="1.21.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.7.1" />
+  </ItemGroup>
+</Project>
