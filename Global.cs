@@ -7,15 +7,11 @@ namespace GraphCLICommandCenter
 {
 	public static class Global
 	{
-		public static string UserID = "Test";
-
 		public static string appID { get; set; }
 
 		public static string scopeString { get; set; }
 
 		public static string emails { get; set; }
-
-		public static string authToken { get; set; }
 
 		public static IConfigurationRoot appConfiguration { get; set; }
 
@@ -38,7 +34,6 @@ namespace GraphCLICommandCenter
 			appID = appConfig["appID"];
 			scopeString = appConfig["scopes"];
 			emails = appConfig["emails"];
-			authToken = appConfig["authToken"];
 			companyName = appConfig["companyName"];
 		}
 

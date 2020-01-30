@@ -22,9 +22,9 @@ namespace GraphCLICommandCenter
             var authProvider = new DeviceCodeAuthProvider(Global.appID, scopes);
 
             // Get access token if none is provided in local env variable
-            var accessToken = (Global.authToken.Length == 0) ? authProvider.GetAccessToken().Result : Global.authToken;
-            
-            
+            var accessToken = authProvider.GetAccessToken().Result;
+
+
             // Initialize Graph client
             GraphHelper.Initialize(authProvider);
 
@@ -88,7 +88,9 @@ namespace GraphCLICommandCenter
                 Console.WriteLine("Input recipients (or 'HR'):");
 
                 string userInputAddress = Console.ReadLine();
+                Console.WriteLine("Enter first name");
                 string userInputFirstName = Console.ReadLine();
+                Console.WriteLine("Enter last name");
                 string userInputLastName = Console.ReadLine();
                 string messageAddress = userInputAddress.Equals("hr", StringComparison.InvariantCultureIgnoreCase) ? Global.emails : userInputAddress;
                 
