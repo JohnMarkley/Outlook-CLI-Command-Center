@@ -19,6 +19,8 @@ namespace GraphCLICommandCenter
 
 		public static IConfigurationRoot appConfiguration { get; set; }
 
+		public static string companyName { get; set; }
+
 
 		/*This was the constructor before Global was turned into a static class
 		public Global(string appID, string scopeString, string emails, string authToken)
@@ -37,6 +39,7 @@ namespace GraphCLICommandCenter
 			scopeString = appConfig["scopes"];
 			emails = appConfig["emails"];
 			authToken = appConfig["authToken"];
+			companyName = appConfig["companyName"];
 		}
 
 		 static IConfigurationRoot LoadAppSettings()

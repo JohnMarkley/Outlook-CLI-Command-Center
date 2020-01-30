@@ -50,7 +50,7 @@ namespace GraphCLICommandCenter
                     Body = new ItemBody
                     {
                         //TODO: Replace hardcoded content
-                        Content = "Hey All, \n\n" + firstNameOfEmployee + "'s AD account has been created and is reachable at " + firstNameOfEmployee + "." + lastNameOfEmployee + "@valorepartners.com \n\nThanks, \nJohn Markley\nIT Support",
+                        Content = "Hey All, \n\n" + firstNameOfEmployee + "'s AD account has been created and is reachable at " + firstNameOfEmployee + "." + lastNameOfEmployee + Global.companyName +"\n\nThanks, \nJohn Markley\nIT Support",
                         
                         ContentType = BodyType.Text,
                     },
