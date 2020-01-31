@@ -13,6 +13,10 @@ dotnet user-secrets init
 dotnet user-secrets set appId "YOUR_APP_ID_HERE"
 dotnet user-secrets set scopes "User.Read;Mail.ReadWrite;Mail.Send"
 ```
+If you have predetermined email addresses you know you'll be emailing often you can also input them as a user-secret separated by semicolons. Note: In the program these addresses will be used if you input "hr" (cap insensitive), you can change that in Program.cs.
+```
+dotnet user-secrets set emails "john@doe.com;jane@doe.com;place@holder.net"
+```
 
 ### Usage
 
